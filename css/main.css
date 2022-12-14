@@ -4,6 +4,46 @@
   padding: 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.modal {
+  display: none;
+}
+
+#backtop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: 1s;
+}
+
+#navbar-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  transition: 0.5s;
+  z-index: -100000;
+}
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -130,7 +170,7 @@ header {
   background: #ffa62b;
 }
 
-.btn-1:hover{
+.btn-1:hover {
   background-color: rgb(241, 11, 11);
   color: rgb(0, 255, 55);
 }
@@ -273,6 +313,7 @@ main {
 }
 
 .about-item p {
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 30px;
   font-weight: 700;
@@ -608,6 +649,9 @@ footer {
 }
 
 /* <!-- end footer-botom --> */
+
+/* @media */
+
 @media only screen and (max-width: 1440px) {
   .container {
     max-width: 1140px;
@@ -619,38 +663,76 @@ footer {
     max-width: 960px;
   }
 
-
-  .advice-list{
+  .advice-list {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
   }
 
   .servises-menus {
     gap: 60px;
-}
+  }
+
+  .contact-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .container {
     max-width: 720px;
   }
-}
 
   .hero-list {
     max-width: 100%;
     flex-wrap: wrap;
     gap: 14px;
+  }
+
+  .about-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 540px;
   }
+
+  .modal {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero-list {
+    justify-content: center;
+  }
+
+  .hero-description {
+    text-align: center;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+
+  .Subscribe-form-text {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 540px) {
   .container {
     max-width: 100%;
-
-    
   }
 }
