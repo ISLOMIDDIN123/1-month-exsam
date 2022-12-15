@@ -543,7 +543,7 @@ form button {
 
 /*---------End Subscribe---------- */
 
-/* <!-- Contact  --> */
+/*----------<!-- Contact  --------> */
 
 .contact-section {
   background: #f3f3f3;
@@ -572,14 +572,11 @@ form button {
   padding: 50px 53px;
   background-color: #fff;
 }
+/*   */
 
 .contact-item img {
   padding-top: 15px;
   padding-bottom: 25px;
-}
-
-.contact-item:hover {
-  background-color: blue;
 }
 
 .contact-item a {
@@ -752,6 +749,11 @@ footer {
     max-width: 720px;
   }
 
+  #modal{
+      justify-content: center;
+    }
+  }
+
   .hero-list {
     max-width: 100%;
     flex-wrap: wrap;
@@ -768,6 +770,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .btn button {
     max-width: 774[px];
     flex-wrap: wrap;
@@ -777,7 +780,6 @@ footer {
     max-width: 772px;
     flex-wrap: wrap;
   }
-}
 
 @media only screen and (max-width: 768px) {
   .container {
