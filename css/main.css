@@ -39,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: #fff;
   transition: 0.5s;
   z-index: -100000;
 }
@@ -145,6 +145,7 @@ header {
 }
 
 .btn {
+  display: inline-block;
   margin-top: 35px;
   display: flex;
 }
@@ -171,8 +172,8 @@ header {
 }
 
 .btn-1:hover {
-  background-color: rgb(241, 11, 11);
-  color: rgb(0, 255, 55);
+  background-color: blue;
+  color: #fff;
 }
 .btn-2 {
   font-family: "Montserrat";
@@ -185,6 +186,10 @@ header {
   color: #00a0c1;
 }
 
+.btn-2:hover {
+  background-color: blue;
+  color: #fff;
+}
 /* ---------Main  End--------*/
 
 main {
@@ -207,6 +212,10 @@ main {
   background: #ffffff;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
   list-style: none;
+}
+
+.hero-item:hover {
+  background-color: blue;
 }
 
 .active {
@@ -235,6 +244,10 @@ main {
   padding-left: 40px;
 }
 
+.hero-item h4:hover {
+  color: #fff;
+}
+
 .hero-item p {
   padding-bottom: 35px;
   padding-left: 40px;
@@ -245,6 +258,10 @@ main {
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #737373;
+}
+
+.hero-item p:hover {
+  color: #fff;
 }
 
 /* ----- End Hero-card ------*/
@@ -296,10 +313,14 @@ main {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.about-item:hover {
+  background-color: blue;
+}
+
 .about-item img {
   padding-top: 32px;
   padding-bottom: 12px;
-  padding-left: 81px;
+  padding-left: 33px;
 }
 .about-item h2 {
   font-family: "Montserrat";
@@ -312,6 +333,10 @@ main {
   text-align: center;
 }
 
+.about-item h2:hover {
+  color: #fff;
+}
+
 .about-item p {
   align-items: center;
   padding-top: 10px;
@@ -322,6 +347,10 @@ main {
   text-align: center;
   letter-spacing: 0.1px;
   color: #737373;
+}
+
+.about-item p:hover {
+  color: #fff;
 }
 
 /*-------End  ABOUT------ */
@@ -339,6 +368,9 @@ main {
   height: 321px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: #ffffff;
+}
+.about-h2-p p:hover {
+  border-bottom: 3px solid blue;
 }
 
 .advice-item h2 {
@@ -476,6 +508,10 @@ main {
   justify-content: space-between;
 }
 
+.Subscribe-img1:hover {
+  border-bottom: 1px solid blue;
+}
+
 .subscribe-form {
   display: flex;
   justify-content: space-between;
@@ -506,6 +542,9 @@ form button {
 }
 
 /*---------End Subscribe---------- */
+
+/* <!-- Contact  --> */
+
 .contact-section {
   background: #f3f3f3;
   padding: 80px 0 208px;
@@ -537,6 +576,10 @@ form button {
 .contact-item img {
   padding-top: 15px;
   padding-bottom: 25px;
+}
+
+.contact-item:hover {
+  background-color: blue;
 }
 
 .contact-item a {
@@ -585,6 +628,11 @@ form input {
   padding: 15px 40px;
   gap: 10px;
 }
+.Contact:hover {
+  background-color: blue;
+  transition: 1s;
+  color: white;
+}
 
 /* --------End form------ */
 
@@ -632,6 +680,10 @@ footer {
 .footer-pargrph img {
   padding-right: 10px;
 }
+.Contact:hover {
+  border-color: blue;
+  transition: 2s;
+}
 
 /* <!-- End Footer  --> */
 
@@ -646,6 +698,11 @@ footer {
 
 .footer-botom-rigth img {
   padding-left: 20px;
+  gap: 50px;
+}
+
+.footer-botom-rigth img:hover {
+  background-color: blue;
 }
 
 /* <!-- end footer-botom --> */
@@ -665,6 +722,12 @@ footer {
 
   .advice-list {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .Subscribe-img {
+    flex-flow: wrap;
     justify-content: center;
     gap: 50px;
   }
@@ -698,6 +761,21 @@ footer {
   .about-list {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .servises-menus {
+    max-width: 798px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn button {
+    max-width: 774[px];
+    flex-wrap: wrap;
+  }
+
+  .Subscribe {
+    max-width: 772px;
+    flex-wrap: wrap;
   }
 }
 
@@ -734,5 +812,20 @@ footer {
 @media only screen and (max-width: 540px) {
   .container {
     max-width: 100%;
+  }
+
+  .footer-botom-menus {
+    max-width: 450px;
+    flex-wrap: wrap;
+  }
+
+  .subscribe-form-btn {
+    min-width: 445px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-bottom-rigth {
+    max-width: 370px;
+    flex-wrap: nowrap;
   }
 }
